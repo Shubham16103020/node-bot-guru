@@ -9,7 +9,6 @@ exports.getBotResponse = (message) => {
             const payload = {
                 type: 'text',
                 text: message,
-                userId: 'user123'
             };
             ws.send(JSON.stringify(payload));
         });
